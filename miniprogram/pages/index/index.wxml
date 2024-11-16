@@ -1,0 +1,33 @@
+<view>
+  <view class="container">
+    <swiper autoplay="true" interval="3000" duration="500" circular="true" indicator-dots="true" indicator-active-color="#ffffff">
+      <swiper-item wx:for="{{images}}" wx:key="url">
+        <image src="{{item.url}}" class="swiper-image" mode="aspectFill" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="image-wrapper">
+    <view class="row">
+      <image src="./images/front.jpg" class="img" mode="aspectFill" />
+      <image src="./images/breakfast1.jpg" class="img" mode="aspectFill" />
+    </view>
+    <view class="row">
+      <image src="./images/new1.jpg" class="img" mode="aspectFill" />
+      <image src="./images/family.jpg" class="img" mode="aspectFill" />
+    </view>
+    <view class="row">
+      <image src="./images/old1.jpg" class="img" mode="aspectFill" />
+      <image src="./images/ele.jpg" class="img" mode="aspectFill" />
+    </view>
+  </view>
+  <view class="feedback-btn" bindtap="onFeedback">
+    <text class="button-text">反馈</text>
+  </view>
+
+  <view class="header">
+    <view class="hotel-info">
+      <text class="hotel-location">📍 大同魏都大道与迎泽街交汇处</text>
+      <text class="hotel-phone">📞 +86+352-2398999</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+{
+	"pages": [
+		"pages/index/index",
+    "pages/feedback/index",
+		"pages/mine/index"
+	],
+	"tabBar": {
+    "color": "#999999", 
+    "selectedColor": "#000000",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [
+			{
+			"pagePath": "pages/index/index",
+			"text": "首页",
+			"iconPath": "images/home.png",
+			"selectedIconPath": "images/home-active.png"
+			},
+			{
+			"pagePath": "pages/mine/index",
+			"text": "我的",
+			"iconPath": "images/mine.png",
+			"selectedIconPath": "images/mine-active.png"
+			}
+		]
+	},
+	"window": {
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTitleText": "大同华贸大酒店",
+    "navigationBarTextStyle":"black"
+	},
+	"useExtendedLib": {
+		"weui": true
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"lazyCodeLoading": "requiredComponents"
+}

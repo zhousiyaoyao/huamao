@@ -1,0 +1,20 @@
+<view class="page-body">
+  <view class="page-section">
+    <view wx:if="{{roomId !== '9999'}}" class="feedback-text">当前房间号: {{roomId}}</view>
+  </view>
+  <view class="page-section">
+    <view class="feedback-text">请填写反馈</view>
+    <view class="textarea-wrp">
+      <textarea value="{{text}}" style="height: 15em" maxlength="200" bindinput="onTextAreaChange" />
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="upload">
+      <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" binddelete="deletePic" upload="{{uploadFile}}" files="{{files}}" max-count="9" title="请上传图片" tips="可选，最多 9 张"></mp-uploader>
+    </view>
+  </view>
+  <view class="button">
+    <button class="weui-btn" type="primary" bind:tap="onSubmit" style=" width: 450rpx;">提交反馈</button>  
+  </view>
+
+</view>

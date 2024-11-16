@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  height: 100%; /* 可根据需求调整 */
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 90%; /* 控制整行宽度 */
+  margin-bottom: 20px; /* 控制行间距 */
+}
+
+.img {
+  width: 48%; /* 图片占行宽的 48%，留出空间作为间距 */
+  height: 120px; /* 固定高度，调节为合适的横版高度 */
+  border-radius: 8px; /* 图片圆角（可选） */
+  object-fit: cover; /* 确保图片填充满区域 */
+}
+
+/* 整体布局 */
+.header {
+  width: 90%;
+  padding: 8px;
+  margin: 16px auto; /* 使其水平居中 */
+  text-align: center;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* 控制上下文本之间的间距 */
+}
+
+.hotel-location {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+
+.hotel-phone {
+  font-size: 14px;
+  color: #666;
+}
+
+
+  /* 悬浮的圆形按钮 */
+  .feedback-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px !important;
+    height: 40px !important;
+    background-color: rgba(160, 200, 255, 0.6); /* 透明淡蓝色背景 */
+    border-radius: 100%; /* 圆形按钮 */
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: move;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-text {
+    font-size: 14px;
+    font-weight: bold;
+  }
