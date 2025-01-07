@@ -6,5 +6,5 @@ page {
 }
 
 .page-body {
-  padding: 25rpx 25rpx;
+  padding: 0rpx 25rpx 25rpx 25rpx;
 }

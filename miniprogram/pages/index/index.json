@@ -5,7 +5,6 @@
 		"mp-cells": "weui-miniprogram/cells/cells",
     	"mp-cell": "weui-miniprogram/cell/cell"
   },
-  "navigationStyle": "custom",
 	"navigationBarTitleText": "大同华贸大酒店",
     "navigationBarBackgroundColor": "#ffffff",
     "enablePullDownRefresh":true,

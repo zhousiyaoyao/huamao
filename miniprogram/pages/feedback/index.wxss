@@ -28,6 +28,23 @@ textarea {
   margin-top: 180rpx;
 }
 
+.feedback-text-wrap {
+  font-size: 14px;
+  background-color:#ADD8E6;
+  color: #4F81B9;
+  height: 32px;
+}
+
 .feedback-text {
-  margin-top: 30rpx;
+  left:14px;
+  position: relative;
+  top: 5px
+}
+
+.room {
+  display: flex;
+}
+
+.roomId {
+  margin-left: auto;
 }

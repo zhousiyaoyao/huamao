@@ -1,17 +1,18 @@
+<view class="feedback-text-wrap"><view class="feedback-text">酒店会在第一时间联系您</view></view>
 <view class="page-body">
   <view class="page-section">
-    <view wx:if="{{roomId !== '9999'}}" class="feedback-text">当前房间号: {{roomId}}</view>
-  </view>
-  <view class="page-section">
-    <view class="feedback-text">请填写反馈</view>
     <view class="textarea-wrp">
-      <textarea value="{{text}}" style="height: 15em" maxlength="200" bindinput="onTextAreaChange" />
+      <textarea value="{{text}}" style="height: 15em" maxlength="200" bindinput="onTextAreaChange" placeholder="请您描述您遇到的问题，您的详细描述有助于我们更快的帮您解决问题" />
     </view>
   </view>
   <view class="page-section">
     <view class="upload">
-      <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" binddelete="deletePic" upload="{{uploadFile}}" files="{{files}}" max-count="9" title="请上传图片" tips="可选，最多 9 张"></mp-uploader>
+      <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" binddelete="deletePic" upload="{{uploadFile}}" title="" files="{{files}}" tips="上传图片可以让酒店更快了解问题" ></mp-uploader>
     </view>
+  </view>
+  <view class="room" wx:if="{{roomId !== '9999'}}">
+    <view>您入住的房间号</view> 
+    <view class="roomId">{{roomId}}</view> 
   </view>
   <view class="button">
     <button class="weui-btn" type="primary" bind:tap="onSubmit" style=" width: 450rpx;">提交反馈</button>  
